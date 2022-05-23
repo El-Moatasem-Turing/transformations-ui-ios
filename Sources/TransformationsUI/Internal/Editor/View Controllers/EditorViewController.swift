@@ -83,7 +83,9 @@ final class EditorViewController: UIViewController, DiscardApplyToolbarDelegate,
 
     func attachModuleViewController() {
         addChild(moduleViewController)
-
+        
+        // Test: 
+        print("attachModuleViewController")
         moduleContainerView.addSubview(moduleViewController.view)
         moduleViewController.view.snp.makeConstraints { $0.edges.equalTo(moduleContainerView) }
 
